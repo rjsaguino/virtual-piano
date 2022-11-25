@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Javascript Virtual Piano</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/f06c9b653f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- SIDE BAR -->
+    <div id="sidebar" class="sidebar">
+      <a class="closebtn" onclick="closeSideBar()" >&times;</a>
+      <div class="content">
+        <h1 class="welcome">Welcome to Virtual Piano!</h1>
+        <p>The ultimate easy-to-use online piano app that everyone can play.</p>
+          <p class="intro">
+            <span class="question"> What is virtual piano? </span><br />
+            Virtual piano keyboard is perfect when there isn't a real piano keyboard
+            at home or when your piano isn't next to your computer. This simulates a
+            real piano keyboard layout with almost two octaves of 24 keys.
+          </p>
+          <p class="intro">
+            <span class="question">How to use the Virtual Piano keyboard?</span>  <br />
+            Use your computer mouse or keyboard to play the virtual piano keyboard.
+            You can view the corresponding computer keyboard letters by activating
+            the "Keyboard Mapping" feature.
+          </p>
+          <p class="intro">
+            <span class="question">What is Keyboard Mapping?</span>
+            <br />
+            It is a realistic mapping that emulates a real piano keyboard layout.
+            Mark the checkbox to enable. Please note that we are using an English
+            QWERTY computer keyboard as a reference.
+          </p>
+        <!-- FORM -->
+        <form action="" class="feedback-form">
+          <p>We'd like to hear from you. Leave us a message. &#x1F60A;</p>
+          <label class="label" for="name">Name</label> 
+          <input class="textbox" id="name" type="text" required>
+          <label class="label" for="email">Email</label>
+          <input class="textbox" id="email" type="text" required> 
+          <textarea required  name="message" id="message" placeholder="type your message here."></textarea> 
+          <input class="newsletter" type="checkbox" id="newsletter"  >
+          <label class="newsletter"  for="newsletter">Subscribe to our newsletter.</label> 
+          <input class="submit" type="submit" value="submit">
+        </form>
+      </div>
+    </div>
+
+    <div id="main">
+      <!-- HEADER -->
+      <div class="top-header">
+        <span class="material-symbols-outlined" onclick="openSideBar()">arrow_circle_right</span>
+        <p class="title">Virtual Piano</p>
+        <!-- RIGHT SECTION - DROPDOWN MENU-->
+        <div class="dropdown">
+          <span class="material-symbols-outlined">person</span>
+          <div class="dropdown-menu">
+            <a href="#" onclick="openLoginForm()">Login/Signup</a>
+            <a href="#" >Chord Guide</a>
+            <a href="">Settings</a>
+            <a href="">Help</a>
+          </div>
+        </div>     
+      </div>
+      <!-- LOGIN FORM-->
+      <div id="login-form">
+        <i class="fa-solid fa-xmark" onclick="closeLoginForm()"></i>
+        <form action="/">
+          <input class="login-input" type="text" placeholder="Phone, username or email">
+          <input  class="login-input" type="password" placeholder="Password">
+          <input type="submit" value="Log in" class="loginBtn">
+          <a href="/">Forgot password?</a>
+          <p>or you can log into a connected account to continue.</p>
+          <button class="googleBtn"> <i class="fa fa-google-plus"></i> Google</button>
+          <button class="appleBtn"><i class="fa-brands fa-apple"></i> Apple</button>
+          <button class="fbBtn"><i class="fa-brands fa-facebook"></i> Facebook</button>
+          <button class="tiktokBtn"> <i class="fa-brands fa-tiktok"></i> Tiktok</button>
+          <button class="twitterBtn"><i class="fa-brands fa-twitter"></i> Twitter</button>
+          <p>New here? <a href="/">Sign up</a></p>
+        </form>
+      </div>
+      <!-- BODY/ PIANO / ETC. -->
+      <div class="display-box"></div>
+      <div class="piano"></div>
+        <input class="feature"  type="checkbox" id="see-notes">
+        <label class="feature"  for="see-notes">Notes</label>
+        <input class="feature" type="checkbox" id="keyboard-map" />
+        <label class="feature"  for="keyboard-map">Keyboard Map</label>
+        <input type="checkbox" class="feature" id="mute-audio">
+        <label for="mute-audio" class="feature">Mute</label>
+
+      <!-- FOOTER -->
+      <div class="footer">
+          <p>Copyright © 2022 All Rights Reserved</p>
+          <p></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+</div>

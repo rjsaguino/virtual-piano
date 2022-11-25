@@ -1,0 +1,325 @@
+body {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 255, 0.692),
+    rgba(0, 100, 250, 0.427)
+  );
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+/* HEADER */
+.top-header {
+  background-color: rgba(40, 40, 40, 0.9);
+  color: rgb(200, 200, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+.material-symbols-outlined {
+  cursor: pointer;
+  background-color: rgba(40, 40, 40, 0);
+  color: rgb(200, 200, 255);
+  padding: 10px 15px;
+  border: none;
+  margin: 10px 15px;
+}
+.material-symbols-outlined:hover {
+  scale: 180%;
+  transition: 0.8s;
+}
+p.title {
+  font-family: "Satisfy", cursive;
+  font-size: 60px;
+  margin: 0;
+  text-shadow: 1px 1px 20px white;
+}
+.dropdown {
+  position: relative;
+  margin-right: 20px;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(40, 40, 40, 0.8);
+}
+.dropdown-menu a {
+  display: block;
+  text-decoration: none;
+  color: rgb(200, 200, 255);
+  padding: 20px 40px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-left: -80px;
+}
+.dropdown-menu a:hover {
+  background-color: rgb(200, 200, 255);
+  color: rgba(40, 40, 40, 0.9);
+  scale: 110%;
+}
+
+/* SIDE BAR */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgba(40, 40, 40, 0.9);
+  color: rgb(200, 200, 255);
+  overflow: scroll;
+  padding-top: 50px;
+  transition: 1s;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.sidebar .closebtn:hover {
+  scale: 150%;
+  transition: 1s;
+}
+
+.welcome {
+  font-family: "Satisfy", cursive;
+}
+.intro {
+  text-align: justify;
+  margin: 15px 30px;
+}
+.question {
+  font-weight: bold;
+}
+
+/*FORM */
+.feedback-form {
+  padding: 20px;
+  margin-bottom: 100px;
+  margin-right: 25px;
+}
+form .label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 8px;
+  color: rgba(200, 200, 255, 0.9);
+}
+form .textbox {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 16px;
+  outline: none;
+  border: none;
+  background-color: rgba(200, 200, 255, 0.9);
+  color: rgba(40, 40, 40, 0.9);
+  padding-left: 15px;
+}
+form textarea {
+  width: 100%;
+  height: 140px;
+  outline: none;
+  margin: 30px auto;
+  background-color: rgba(200, 200, 255, 0.9);
+  color: rgba(40, 40, 40, 0.9);
+  padding-left: 15px;
+}
+.submit {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: rgba(40, 40, 40, 0.5);
+  color: rgba(200, 200, 255, 0.9);
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+.submit:hover {
+  background-color: rgba(40, 40, 40, 0.8);
+  scale: 110%;
+  transition: 0.8s;
+}
+.newsletter {
+  cursor: pointer;
+}
+/* LOGIN FORM */
+#login-form {
+  background-color: rgba(40, 40, 40, 0.95);
+  color: rgb(200, 200, 255);
+  width: 400px;
+  margin: 10px auto;
+  padding: 15px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  border: none;
+  border-radius: 12px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: none;
+}
+.fa-solid {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}
+.fa-solid:hover {
+  scale: 130%;
+  color: white;
+  transition: 0.8s;
+}
+.login-input {
+  display: block;
+  font-size: 14px;
+  width: 80%;
+  height: 28px;
+  margin: 35px auto;
+  padding-left: 18px;
+  outline: none;
+  background-color: rgb(200, 200, 255);
+  color: rgba(40, 40, 40, 0.9);
+  border: none;
+}
+.loginBtn {
+  margin: 12px auto;
+  padding: 10px 50px;
+  display: block;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(200, 200, 255);
+}
+#login-form a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(88, 88, 227);
+}
+#login-form p {
+  font-size: 12px;
+}
+#login-form button {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  margin: 5px auto;
+}
+.googleBtn {
+  background-color: #db4437;
+}
+.appleBtn {
+  background-color: white;
+}
+.fbBtn {
+  background-color: #4267b2;
+}
+.twitterBtn {
+  background-color: #1da1f2;
+}
+.tiktokBtn {
+  background: linear-gradient(to right, #00e4ff, #ff0000);
+}
+
+/* BODY */
+#main {
+  transition: 1s;
+}
+.display-box {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  width: 10vw;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 255, 0.05);
+  color: rgb(218, 208, 208);
+  margin: 70px auto;
+  padding: 20px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(40, 40, 40, 0.9);
+}
+.piano {
+  width: max-content;
+  margin: auto;
+  font-size: 13px;
+  display: flex;
+  border: none;
+}
+.white {
+  width: 60px;
+  height: 300px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0px 9px 6px rgba(0, 0, 0, 0.444);
+  border: none;
+  margin: 0 1px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+.active {
+  scale: 95%;
+}
+.black {
+  cursor: pointer;
+  background-color: black;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.318);
+  border: none;
+  width: 50px;
+  height: 185px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: -25px;
+  margin-right: -25px;
+  z-index: 2;
+  border-bottom-right-radius: 25px;
+}
+.black:active,
+.white:active {
+  scale: 95%;
+}
+.feature {
+  color: rgb(218, 208, 208);
+  margin-top: 30px;
+  margin-bottom: 110px;
+  cursor: pointer;
+  font-size: 14px;
+}
+#keyboard-map,
+#see-notes,
+#mute-audio,
+#sustain {
+  margin-left: 50px;
+}
+.white p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.black p {
+  margin-top: -18px;
+}
+
+/*FOOTER */
+.footer {
+  background-color: rgba(40, 40, 40, 0.9);
+  padding: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 170px;
+}
